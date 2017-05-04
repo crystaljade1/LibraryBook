@@ -14,6 +14,7 @@
 		82F60DED1EBA5CD7008D18BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F60DEB1EBA5CD7008D18BB /* LaunchScreen.storyboard */; };
 		82F60DF81EBA5CD7008D18BB /* LibraryBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F60DF71EBA5CD7008D18BB /* LibraryBookTests.swift */; };
 		82F60E031EBA5CD8008D18BB /* LibraryBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F60E021EBA5CD8008D18BB /* LibraryBookUITests.swift */; };
+		82F60E111EBA6004008D18BB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F60E101EBA6004008D18BB /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		82F60DFE1EBA5CD8008D18BB /* LibraryBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F60E021EBA5CD8008D18BB /* LibraryBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBookUITests.swift; sourceTree = "<group>"; };
 		82F60E041EBA5CD8008D18BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F60E101EBA6004008D18BB /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				82F60DE21EBA5CD7008D18BB /* AppDelegate.swift */,
 				82F60DE41EBA5CD7008D18BB /* ViewController.swift */,
+				82F60E101EBA6004008D18BB /* Book.swift */,
 				82F60DE61EBA5CD7008D18BB /* Main.storyboard */,
 				82F60DE91EBA5CD7008D18BB /* Assets.xcassets */,
 				82F60DEB1EBA5CD7008D18BB /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				82F60DE51EBA5CD7008D18BB /* ViewController.swift in Sources */,
 				82F60DE31EBA5CD7008D18BB /* AppDelegate.swift in Sources */,
+				82F60E111EBA6004008D18BB /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
