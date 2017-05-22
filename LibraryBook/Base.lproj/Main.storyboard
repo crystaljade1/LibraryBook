@@ -22,48 +22,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-i1-In7">
-                                <rect key="frame" x="279" y="582" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-FG-tJe">
+                                <rect key="frame" x="69" y="605" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="previousBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRH-Uw-75n"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="90B-G2-Uyl">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="90B-G2-Uyl">
                                 <rect key="frame" x="16" y="20" width="343" height="547"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEf-mc-xp4">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="485.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-ef-23r">
-                                        <rect key="frame" x="0.0" y="142" width="343" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="485.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-yT-mlv">
-                                        <rect key="frame" x="0.0" y="283.5" width="343" height="122"/>
+                                        <rect key="frame" x="0.0" y="506" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-Qi-txZ">
-                                        <rect key="frame" x="0.0" y="425.5" width="343" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="526.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsV-FG-tJe">
-                                <rect key="frame" x="63" y="582" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Previous"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-i1-In7">
+                                <rect key="frame" x="268" y="605" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abl-lO-QwP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KsV-FG-tJe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="PxX-SK-0DJ"/>
+                            <constraint firstItem="cWM-i1-In7" firstAttribute="leading" secondItem="KsV-FG-tJe" secondAttribute="trailing" constant="140" id="c2J-B6-7jc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cWM-i1-In7" secondAttribute="trailing" constant="59" id="d7C-3G-rPM"/>
+                            <constraint firstItem="cWM-i1-In7" firstAttribute="top" secondItem="90B-G2-Uyl" secondAttribute="bottom" constant="38" id="f4m-JF-2zg"/>
+                            <constraint firstItem="KsV-FG-tJe" firstAttribute="top" secondItem="90B-G2-Uyl" secondAttribute="bottom" constant="38" id="fx1-DO-ZTY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="90B-G2-Uyl" secondAttribute="bottom" constant="100" id="hF0-9K-fWC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="90B-G2-Uyl" secondAttribute="trailing" id="nPJ-d4-buX"/>
                             <constraint firstItem="90B-G2-Uyl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tLZ-8G-Fjt"/>

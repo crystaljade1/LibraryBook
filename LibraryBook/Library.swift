@@ -48,9 +48,7 @@ class Library {
             self.id = id
         }
     }
-    
 }
-
 
 extension Library.Book {
     

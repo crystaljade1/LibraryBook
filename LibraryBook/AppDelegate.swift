@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let url = "https://tiy-todo-angular.herokuapp.com/get-all-books.json"
@@ -30,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         for i in jsonDictionaries{
                             let singleBook = Library.Book(jsonDictionary: i)
                             libraryBooks.append(singleBook!)
-                         }
+                        }
                         print(libraryBooks)
                     } else {
                         print("error deserializing JSON")
@@ -45,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         task.resume()
-        
+
         return true
     }
     
